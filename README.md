@@ -1,2 +1,1 @@
-# Helmert
-Helmert (Benzerlik) Dönüşümü
+# Helmert (Benzerlik) Dönüşümü
