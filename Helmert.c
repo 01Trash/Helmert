@@ -219,7 +219,7 @@ int main()
 	q12=………… */
 
 	/* Qxx matrisinin hesaplanması (4×4 matris tersi alınması);
-	> qx11, qx12, qx13, qx14;qx21, qx22, qx23, qx24; qx31, qx32, qx33, qx34; qx41, qx42, qx43, qx44;
+	> qx11, qx12, qx13, qx14; qx21, qx22, qx23, qx24; qx31, qx32, qx33, qx34; qx41, qx42, qx43, qx44;
 	> Bulunacak (-1)’li değerler; ebx11, ebx12, ebx13, ebx14, ebx22, ebx23, ebx24, ebx33, ebx34, ebx44
 	> İndirgenen değerler; ax22, ax23, ax24, ax33, ax34, ax44;
 	>Ters matris değerleri; qx11, qx12, qx13, qx14; qx21, qx22, qx23, qx24; qx31, qx32, qx33, qx34; qx41, qx42, qx43, qx44;
@@ -259,15 +259,15 @@ int main()
 	a = qx31 * z11 + qx32 * z21 + qx33 * z31 + qx34 * z41;
 	b = qx41 * z11 + qx42 * z21 + qx43 * z31 + qx44 * z41; */
 
-	/* Ölçek (k) ve dönüklük (ε) parametresi değerlerinin hesaplanması;> k, dönε;
-	k = Sqrt(a^2+b^2);
+	/* Ölçek (k) ve dönüklük (ε) parametresi değerlerinin hesaplanması; > k, dönε;
+	k = Sqrt(a^2 + b^2);
 	dönε = Atan(b / a); */
 
 	/* Düzeltme denklemlerinin hesaplanması;
 	> Vx11, Vy21, Vx32, Vy42, Vx53, Vy63, Vx74, Vy84, Vx95, Vy105;
 	> Vx116, Vy126, Vx137, Vy147, Vx158, Vy168, Vx179, Vy189, Vx1910, Vy2010;
-	Vx11 = (a11 * tx + a12 * ty + a13 * a + a14 * b) – ITRFyuk1;
-	Vy21 = (a21 * tx + a22 * ty + a23 * a + a24 * b) – ITRFsag1;
+	Vx11 = (a11 * tx + a12 * ty + a13 * a + a14 * b) - ITRFyuk1;
+	Vy21 = (a21 * tx + a22 * ty + a23 * a + a24 * b) - ITRFsag1;
 	Vx32 = ………….. */
 
 	/* Düzeltme getirilen ITRF96 koordinatlarının hesaplanması;
