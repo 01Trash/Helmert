@@ -93,15 +93,44 @@ int main()
 	printf("ITRFsag10 değerini giriniz: ");
 	scanf("%lf", &ITRFsag10);
 	/* A katsayılar matrisi;
-	> a11, a12, a13, a14;a21, a22, a23, a24; a31, a32, a33, a34; a41, a42, a43, a44; a51, a52, a53, a54; a61, a62, a63, a64;a71, a72, a73, a74;
-	>  a81, a82, a83, a84;a91, a92, a93, a94; a101, a102, a103, a104;a111, a112, a113, a114; a121, a122, a123, a124;a131, a132, a133, a134;
-	>  a141, a142, a143, a144; a151, a152, a153, a154;a161, a162, a163, a164;a171, a172, a173, a174; a181, a182, a183, a184; a191, a192, a193, a194
+	> a11, a12, a13, a14;
+	> a21, a22, a23, a24;
+	> a31, a32, a33, a34;
+	> a41, a42, a43, a44;
+	> a51, a52, a53, a54;
+	> a61, a62, a63, a64;
+	> a71, a72, a73, a74;
+	> a81, a82, a83, a84;
+	> a91, a92, a93, a94;
+	> a101, a102, a103, a104;
+	> a111, a112, a113, a114;
+	> a121, a122, a123, a124;
+	> a131, a132, a133, a134;
+	> a141, a142, a143, a144;
+	> a151, a152, a153, a154;
+	> a161, a162, a163, a164;
+	> a171, a172, a173, a174;
+	> a181, a182, a183, a184;
+	> a191, a192, a193, a194;
 	> a201, a202, a203, a204;
 	a11 = 1;
 	a12 = 0;
 	a13 = ED50yuk1;
 	a14 = -ED50sag1;
 	a21 =………… */
+	
+	/* a11 = 1;
+	a12 = 0;
+	a13 = ED50yuk1;
+	a14 = -ED50sag1;
+	a21 = 1;
+	a22 = 0;
+	a23 = ED50yuk2;
+	a24 = -ED50sag2;
+	a31 = 1;
+	a32 = 0;
+	a33 = ED50yuk3;
+	a34 = -ED50sag3; */
 
 	/* l matrisi;
 	> l11, l21, l31, l41, l51, l61, l71, l81, l91, l101, l111, l121, l131, l141, l151, l161, l171, l181, l191, l201
@@ -121,16 +150,16 @@ int main()
 	q12=………… */
 
 	/* Qxx matrisinin hesaplanması (4×4 matris tersi alınması);
-	> qx11, qx12, qx13, qx14;qx21, qx22, qx23, qx24; qx31, qx32, qx33, qx34;qx41, qx42, qx43, qx44;
-	> Bulunacak (-1)’li değerler;ebx11, ebx12, ebx13, ebx14, ebx22, ebx23, ebx24, ebx33, ebx34, ebx44
+	> qx11, qx12, qx13, qx14;qx21, qx22, qx23, qx24; qx31, qx32, qx33, qx34; qx41, qx42, qx43, qx44;
+	> Bulunacak (-1)’li değerler; ebx11, ebx12, ebx13, ebx14, ebx22, ebx23, ebx24, ebx33, ebx34, ebx44
 	> İndirgenen değerler; ax22, ax23, ax24, ax33, ax34, ax44;
-	>Ters matris değerleri;qx11, qx12, qx13, qx14; qx21, qx22, qx23, qx24; qx31, qx32, qx33, qx34;qx41, qx42, qx43, qx44;
+	>Ters matris değerleri; qx11, qx12, qx13, qx14; qx21, qx22, qx23, qx24; qx31, qx32, qx33, qx34; qx41, qx42, qx43, qx44;
 	
 	1.satır için (-1)’li değerlerin bulunması;
 	>  ebx11 = q11 / -q11; 
 	>  ebx12 = …………
 	
-	2.satırın 1. indirgenmesi; 2.satırın x21=x12 katsayısı 1.satırın (-1)’li katsayıları ile çarpılır. Sonrasında 2.satırda aynı sütuna denk gelen katsayı ile toplanır.
+	2.satırın 1. indirgenmesi; 2.satırın x21 = x12 katsayısı 1.satırın (-1)’li katsayıları ile çarpılır. Sonrasında 2.satırda aynı sütuna denk gelen katsayı ile toplanır.
 	> ax22 = (q12 * ebx12) + q22;
 	> ax23 = ……………..
 	2.satırın 1.indirgenmesinden (-1)’li değerlerin bulunması
