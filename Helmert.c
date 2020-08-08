@@ -7,9 +7,10 @@ int main()
 	setlocale(LC_ALL, "Turkish");
 
 	double ED50yuk1, ED50sag1, ED50yuk2, ED50sag2, ED50yuk3, ED50sag3, ED50yuk4, ED50sag4, ED50yuk5, ED50sag5, ED50yuk6, ED50sag6, ED50yuk7, ED50sag7, ED50yuk8, ED50sag8, ED50yuk9, ED50sag9, ED50yuk10, ED50sag10;
+	double ITRFyuk1, ITRFsag1, ITRFyuk2, ITRFsag2, ITRFyuk3, ITRFsag3, ITRFyuk4, ITRFsag4, ITRFyuk5, ITRFsag5, ITRFyuk6, ITRFsag6, ITRFyuk7, ITRFsag7, ITRFyuk8, ITRFsag8, ITRFyuk9, ITRFsag9, ITRFyuk10, ITRFsag10;
 
 		/// Bilinenleri isteyelim.
-	/* ED50 projeksiyon koordinatları; > ED50yuk1, ED50sag1, ED50yuk2, ED50sag2, ED50yuk3, ED50sag3, ED50yuk4, ED50sag4, ED50yuk5, ED50sag5, ED50yuk6, ED50sag6, ED50yuk7, ED50sag7, ED50yuk8, ED50sag8, ED50yuk9, ED50sag9, ED50yuk10, ED50sag10 */
+	/* ED50 projeksiyon koordinatları; ED50yuk1, ED50sag1, ED50yuk2, ED50sag2, ED50yuk3, ED50sag3, ED50yuk4, ED50sag4, ED50yuk5, ED50sag5, ED50yuk6, ED50sag6, ED50yuk7, ED50sag7, ED50yuk8, ED50sag8, ED50yuk9, ED50sag9, ED50yuk10, ED50sag10; */
 	printf("ED50yuk1 değerini giriniz: ");
 	scanf("%lf", &ED50yuk1);
 	printf("ED50sag1 değerini giriniz: ");
@@ -50,10 +51,47 @@ int main()
 	scanf("%lf", &ED50yuk10);
 	printf("ED50sag10 değerini giriniz: ");
 	scanf("%lf", &ED50sag10);
-	/* ITRF96 projeksiyon koordinatları;
-	> ITRFyuk1, ITRFsag1, ITRFyuk2, ITRFsag2, ITRFyuk3, ITRFsag3, ITRFyuk4, ITRFsag4, ITRFyuk5, ITRFsag5
-	> ITRFyuk6, ITRFsag6, ITRFyuk7, ITRFsag7, ITRFyuk8, ITRFsag8, ITRFyuk9, ITRFsag9, ITRFyuk10, ITRFsag10 */
-
+	/* ITRF96 projeksiyon koordinatları; ITRFyuk1, ITRFsag1, ITRFyuk2, ITRFsag2, ITRFyuk3, ITRFsag3, ITRFyuk4, ITRFsag4, ITRFyuk5, ITRFsag5, ITRFyuk6, ITRFsag6, ITRFyuk7, ITRFsag7, ITRFyuk8, ITRFsag8, ITRFyuk9, ITRFsag9, ITRFyuk10, ITRFsag10; */
+	printf("ITRFyuk1 değerini giriniz: ");
+	scanf("%lf", &ITRFyuk1);
+	printf("ITRFsag1 değerini giriniz: ");
+	scanf("%lf", &ITRFsag1);
+	printf("ITRFyuk2 değerini giriniz: ");
+	scanf("%lf", &ITRFyuk2);
+	printf("ITRFsag2 değerini giriniz: ");
+	scanf("%lf", &ITRFsag2);
+	printf("ITRFyuk3 değerini giriniz: ");
+	scanf("%lf", &ITRFyuk3);
+	printf("ITRFsag3 değerini giriniz: ");
+	scanf("%lf", &ITRFsag3);
+	printf("ITRFyuk4 değerini giriniz: ");
+	scanf("%lf", &ITRFyuk4);
+	printf("ITRFsag4 değerini giriniz: ");
+	scanf("%lf", &ITRFsag4);
+	printf("ITRFyuk5 değerini giriniz: ");
+	scanf("%lf", &ITRFyuk5);
+	printf("ITRFsag5 değerini giriniz: ");
+	scanf("%lf", &ITRFsag5);
+	printf("ITRFyuk6 değerini giriniz: ");
+	scanf("%lf", &ITRFyuk6);
+	printf("ITRFsag6 değerini giriniz: ");
+	scanf("%lf", &ITRFsag6);
+	printf("ITRFyuk7 değerini giriniz: ");
+	scanf("%lf", &ITRFyuk7);
+	printf("ITRFsag7 değerini giriniz: ");
+	scanf("%lf", &ITRFsag7);
+	printf("ITRFyuk8 değerini giriniz: ");
+	scanf("%lf", &ITRFyuk8);
+	printf("ITRFsag8 değerini giriniz: ");
+	scanf("%lf", &ITRFsag8);
+	printf("ITRFyuk9 değerini giriniz: ");
+	scanf("%lf", &ITRFyuk9);
+	printf("ITRFsag9 değerini giriniz: ");
+	scanf("%lf", &ITRFsag9);
+	printf("ITRFyuk10 değerini giriniz: ");
+	scanf("%lf", &ITRFyuk10);
+	printf("ITRFsag10 değerini giriniz: ");
+	scanf("%lf", &ITRFsag10);
 	/* A katsayılar matrisi;
 	> a11, a12, a13, a14;a21, a22, a23, a24; a31, a32, a33, a34; a41, a42, a43, a44; a51, a52, a53, a54; a61, a62, a63, a64;a71, a72, a73, a74;
 	>  a81, a82, a83, a84;a91, a92, a93, a94; a101, a102, a103, a104;a111, a112, a113, a114; a121, a122, a123, a124;a131, a132, a133, a134;
