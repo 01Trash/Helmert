@@ -9,6 +9,7 @@ int main()
 	double ED50yuk1, ED50sag1, ED50yuk2, ED50sag2, ED50yuk3, ED50sag3, ED50yuk4, ED50sag4, ED50yuk5, ED50sag5, ED50yuk6, ED50sag6, ED50yuk7, ED50sag7, ED50yuk8, ED50sag8, ED50yuk9, ED50sag9, ED50yuk10, ED50sag10;
 	double ITRFyuk1, ITRFsag1, ITRFyuk2, ITRFsag2, ITRFyuk3, ITRFsag3, ITRFyuk4, ITRFsag4, ITRFyuk5, ITRFsag5, ITRFyuk6, ITRFsag6, ITRFyuk7, ITRFsag7, ITRFyuk8, ITRFsag8, ITRFyuk9, ITRFsag9, ITRFyuk10, ITRFsag10;
 	double a11, a12, a13, a14, a21, a22, a23, a24, a31, a32, a33, a34, a41, a42, a43, a44, a51, a52, a53, a54, a61, a62, a63, a64, a71, a72, a73, a74, a81, a82, a83, a84, a91, a92, a93, a94, a101, a102, a103, a104;
+	double l11, l21, l31, l41, l51, l61, l71, l81, l91, l101, l111, l121, l131, l141, l151, l161, l171, l181, l191, l201;
 
 		/// Bilinenleri isteyelim.
 	/* ED50 projeksiyon koordinatları; ED50yuk1, ED50sag1, ED50yuk2, ED50sag2, ED50yuk3, ED50sag3, ED50yuk4, ED50sag4, ED50yuk5, ED50sag5, ED50yuk6, ED50sag6, ED50yuk7, ED50sag7, ED50yuk8, ED50sag8, ED50yuk9, ED50sag9, ED50yuk10, ED50sag10; */
@@ -181,11 +182,31 @@ int main()
 	// a201, a202, a203, a204;
 
 	/* l matrisi;
-	> l11, l21, l31, l41, l51, l61, l71, l81, l91, l101, l111, l121, l131, l141, l151, l161, l171, l181, l191, l201
+	> l11, l21, l31, l41, l51, l61, l71, l81, l91, l101, l111, l121, l131, l141, l151, l161, l171, l181, l191, l201;
 	l11 = ITRFyuk1;
 	l21 = ITRFsag1;
 	l31 = ITRFyuk2;
 	l41 = ITRFsag2; */
+	l11 = ITRFyuk1;
+	l21 = ITRFsag1;
+	l31 = ITRFyuk2;
+	l41 = ITRFsag2;
+	l51 = ITRFyuk3;
+	l61 = ITRFsag3;
+	l71 = ITRFyuk4;
+	l81 = ITRFsag4;
+	l91 = ITRFyuk5;
+	l101 = ITRFsag5;
+	l111 = ITRFyuk6;
+	l121 = ITRFsag6;
+	l131 = ITRFyuk7;
+	l141 = ITRFsag7;
+	l151 = ITRFyuk8;
+	l161 = ITRFsag8;
+	l171 = ITRFyuk9;
+	l181 = ITRFsag9;
+	l191 = ITRFyuk10;
+	l201 = ITRFsag10;
 
 		/// Bilinmeyenlerin hesaplanması.
 	printf("\n\t=== Hesap sonuçları! === \n");
