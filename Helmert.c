@@ -6,12 +6,50 @@ int main()
 {
 	setlocale(LC_ALL, "Turkish");
 
-	//double 
+	double ED50yuk1, ED50sag1, ED50yuk2, ED50sag2, ED50yuk3, ED50sag3, ED50yuk4, ED50sag4, ED50yuk5, ED50sag5, ED50yuk6, ED50sag6, ED50yuk7, ED50sag7, ED50yuk8, ED50sag8, ED50yuk9, ED50sag9, ED50yuk10, ED50sag10;
 
 		/// Bilinenleri isteyelim.
-	/* ED50 projeksiyon koordinatları; > ED50yuk1, ED50sag1, ED50yuk2, ED50sag2, ED50yuk3, ED50sag3, ED50yuk4, ED50sag4, ED50yuk5, ED50sag5,
-	> ED50yuk6, ED50sag6, ED50yuk7, ED50sag7, ED50yuk8, ED50sag8, ED50yuk9, ED50sag9, ED50yuk10, ED50sag10 */
-
+	/* ED50 projeksiyon koordinatları; > ED50yuk1, ED50sag1, ED50yuk2, ED50sag2, ED50yuk3, ED50sag3, ED50yuk4, ED50sag4, ED50yuk5, ED50sag5, ED50yuk6, ED50sag6, ED50yuk7, ED50sag7, ED50yuk8, ED50sag8, ED50yuk9, ED50sag9, ED50yuk10, ED50sag10 */
+	printf("ED50yuk1 değerini giriniz: ");
+	scanf("%lf", &ED50yuk1);
+	printf("ED50sag1 değerini giriniz: ");
+	scanf("%lf", &ED50sag1);
+	printf("ED50yuk2 değerini giriniz: ");
+	scanf("%lf", &ED50yuk2);
+	printf("ED50sag2 değerini giriniz: ");
+	scanf("%lf", &ED50sag2);
+	printf("ED50yuk3 değerini giriniz: ");
+	scanf("%lf", &ED50yuk3);
+	printf("ED50sag3 değerini giriniz: ");
+	scanf("%lf", &ED50sag3);
+	printf("ED50yuk4 değerini giriniz: ");
+	scanf("%lf", &ED50yuk4);
+	printf("ED50sag4 değerini giriniz: ");
+	scanf("%lf", &ED50sag4);
+	printf("ED50yuk5 değerini giriniz: ");
+	scanf("%lf", &ED50yuk5);
+	printf("ED50sag5 değerini giriniz: ");
+	scanf("%lf", &ED50sag5);
+	printf("ED50yuk6 değerini giriniz: ");
+	scanf("%lf", &ED50yuk6);
+	printf("ED50sag6 değerini giriniz: ");
+	scanf("%lf", &ED50sag6);
+	printf("ED50yuk7 değerini giriniz: ");
+	scanf("%lf", &ED50yuk7);
+	printf("ED50sag7 değerini giriniz: ");
+	scanf("%lf", &ED50sag7);
+	printf("ED50yuk8 değerini giriniz: ");
+	scanf("%lf", &ED50yuk8);
+	printf("ED50sag8 değerini giriniz: ");
+	scanf("%lf", &ED50sag8);
+	printf("ED50yuk9 değerini giriniz: ");
+	scanf("%lf", &ED50yuk9);
+	printf("ED50sag9 değerini giriniz: ");
+	scanf("%lf", &ED50sag9);
+	printf("ED50yuk10 değerini giriniz: ");
+	scanf("%lf", &ED50yuk10);
+	printf("ED50sag10 değerini giriniz: ");
+	scanf("%lf", &ED50sag10);
 	/* ITRF96 projeksiyon koordinatları;
 	> ITRFyuk1, ITRFsag1, ITRFyuk2, ITRFsag2, ITRFyuk3, ITRFsag3, ITRFyuk4, ITRFsag4, ITRFyuk5, ITRFsag5
 	> ITRFyuk6, ITRFsag6, ITRFyuk7, ITRFsag7, ITRFyuk8, ITRFsag8, ITRFyuk9, ITRFsag9, ITRFyuk10, ITRFsag10 */
@@ -60,19 +98,16 @@ int main()
 	2.satırın 1.indirgenmesinden (-1)’li değerlerin bulunması
 	> ebx22 = ax22 / -ax22;
 	> ebx23 = ……………..
-
 	3.satırın 1.indirgemesi; 3.satırın x31=x13 ile 1.satırın (-1)’li satırındaki değerler çarpılır. 2.satırın 1.indirgenmesi ile 2.satırın 1. (-1)’li değerleri çapılır. Sonrasında bulunan benzer katsayı değerleri toplanarak, 3.satırın katsayılarına eklenir. Böylece aranan değer bulunmuş olur.
 	> ax33 = (q13 * ebx13) + (ax23 * ebx23) + q33;
 	> ax34 = ………………………….
 	3.satırın 1.indirgemesinden (-1)’li değerlerin bulunması
 	> ebx33 = ax33 / -ax33;
 	> ebx34 = …………………
-
 	4.satırın 1.indirgemesi; 4.sütunda; 1.satırdaki değer ile 1.satırın (-1)’li değerlerin tamamının çarpımı, 2.satırdaki 4.sütun değeri ile 2.(-1)’li değerlerin çarpımı, 3.satırdaki 4.sütun değeri ile 3.(-1)’li değerlerinin tamamının çarpımı yapılarak Simetrik olan 4.satırdaki değerlere eklenerek bulunur.
 	> ax44 = (q14 * ebx14) + (ax24 * ebx24) + (ax34 * ebx34) + q44;
 	4.satırın 1. indirgemesinden (-1)’li değerlerin bulunması
 	> ebx44 = ax44 / -ax44;
-
 	Simetrik Matrisin Ters değerlerinin bulunması;qx11, qx12, qx13, qx14; qx21, qx22, qx23, qx24; qx31, qx32, qx33, qx34;qx41, qx42, qx43, qx44;
 	> qx44 = 1 / ax44;
 	> qx43 = (qx44 * ebx34); 
