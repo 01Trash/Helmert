@@ -227,7 +227,6 @@ int main()
 	1.satır için (-1)’li değerlerin bulunması;
 	>  ebx11 = q11 / -q11; 
 	>  ebx12 = …………
-	
 	2.satırın 1. indirgenmesi; 2.satırın x21 = x12 katsayısı 1.satırın (-1)’li katsayıları ile çarpılır. Sonrasında 2.satırda aynı sütuna denk gelen katsayı ile toplanır.
 	> ax22 = (q12 * ebx12) + q22;
 	> ax23 = ……………..
@@ -244,7 +243,7 @@ int main()
 	> ax44 = (q14 * ebx14) + (ax24 * ebx24) + (ax34 * ebx34) + q44;
 	4.satırın 1. indirgemesinden (-1)’li değerlerin bulunması
 	> ebx44 = ax44 / -ax44;
-	Simetrik Matrisin Ters değerlerinin bulunması;qx11, qx12, qx13, qx14; qx21, qx22, qx23, qx24; qx31, qx32, qx33, qx34;qx41, qx42, qx43, qx44;
+	Simetrik Matrisin Ters değerlerinin bulunması;qx11, qx12, qx13, qx14; qx21, qx22, qx23, qx24; qx31, qx32, qx33, qx34; qx41, qx42, qx43, qx44;
 	> qx44 = 1 / ax44;
 	> qx43 = (qx44 * ebx34); 
 	> qx42 = ………………… */
@@ -272,8 +271,8 @@ int main()
 
 	/* Düzeltme getirilen ITRF96 koordinatlarının hesaplanması;
 	> ITRFyuk1d, ITRFsag1d, ITRFyuk2d, ITRFsag2d, ITRFyuk3d, ITRFsag3d, ITRFyuk4d, ITRFsag4d;          
-	> ITRFyuk5d,ITRFsag5d, ITRFyuk6d, ITRFsag6d, ITRFyuk7d, ITRFsag7d, ITRFyuk8d, ITRFsag8d
-	> ITRFyuk9d,ITRFsag9d, ITRFyuk10d, ITRFsag10d;
+	> ITRFyuk5d, ITRFsag5d, ITRFyuk6d, ITRFsag6d, ITRFyuk7d, ITRFsag7d, ITRFyuk8d, ITRFsag8d
+	> ITRFyuk9d, ITRFsag9d, ITRFyuk10d, ITRFsag10d;
 	ITRFyuk1d = ITRFyuk1 + Vx11;
 	ITRFsag1d = ITRFsag1 + Vy21;
 	ITRFyuk2d = ……………… */
