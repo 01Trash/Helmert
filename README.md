@@ -16,3 +16,6 @@ ED50 ITRF96 projeksiyon koordinatları değerlerinin girilmesi gerekmektedir. D�
 
 
 <a href="https://muhendiskoyu.github.io/C-Cpp-gelistirme-ortamlari" target="_blank">buraya tıklayarak</a>
+
+
+<a target="_blank">https://muhendiskoyu.github.io/C-Cpp-gelistirme-ortamlari</a>
