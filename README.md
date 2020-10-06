@@ -11,11 +11,3 @@ Nirengi ağınızda bulunan 10 noktanın hem ED50 datumunda hem de ITRF96’da k
 **Çalıştırıldığında;**
 
 ED50 ITRF96 projeksiyon koordinatları değerlerinin girilmesi gerekmektedir. Düzeltilmiş ITRF96 projeksiyon koordinatları, düzeltme değerleri (Vx, Vy), öteleme (tx, ty), yardımcı paramatre değerleri (a, b), ölçek ve dönüklük (k, ε) değerlerini elde edebilirsiniz.
-
-
-
-
-<a href="https://muhendiskoyu.github.io/C-Cpp-gelistirme-ortamlari" target="_blank">buraya tıklayarak</a>
-
-
-<a target="_blank">https://muhendiskoyu.github.io/C-Cpp-gelistirme-ortamlari</a>
